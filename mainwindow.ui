@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>617</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QProgressBar" name="progressBar">
+        <property name="value">
+         <number>24</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTableView" name="tableView"/>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>671</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="CreatingData"/>
+    <addaction name="OpenFile"/>
+    <addaction name="SaveAsFile"/>
+    <addaction name="actionConnect"/>
+    <addaction name="actionQuit"/>
+    <addaction name="forTest"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Інструменти</string>
+    </property>
+    <addaction name="actionConfigure"/>
+    <addaction name="actionClear"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Графік</string>
+    </property>
+    <addaction name="graphikaction"/>
+    <addaction name="potentialGrphikAction"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Допомога</string>
+    </property>
+    <addaction name="help_action"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="CreatingData"/>
+   <addaction name="OpenFile"/>
+   <addaction name="SaveAsFile"/>
+   <addaction name="separator"/>
+   <addaction name="actionConnect"/>
+   <addaction name="separator"/>
+   <addaction name="actionConfigure"/>
+   <addaction name="potentialGrphikAction"/>
+   <addaction name="graphikaction"/>
+   <addaction name="actionQuit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="CreatingData">
+   <property name="icon">
+    <iconset resource="iconsToProject.qrc">
+     <normaloff>:/create.png</normaloff>:/create.png</iconset>
+   </property>
+   <property name="text">
+    <string>Обробити дані з текстового файлу</string>
+   </property>
+  </action>
+  <action name="OpenFile">
+   <property name="icon">
+    <iconset resource="iconsToProject.qrc">
+     <normaloff>:/load.png</normaloff>:/load.png</iconset>
+   </property>
+   <property name="text">
+    <string>Відкрити файл</string>
+   </property>
+  </action>
+  <action name="SaveAsFile">
+   <property name="icon">
+    <iconset resource="iconsToProject.qrc">
+     <normaloff>:/save.png</normaloff>:/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Зберегти файл як</string>
+   </property>
+  </action>
+  <action name="Save">
+   <property name="icon">
+    <iconset resource="iconsToProject.qrc">
+     <normaloff>:/save_as.png</normaloff>:/save_as.png</iconset>
+   </property>
+   <property name="text">
+    <string>Зберегти</string>
+   </property>
+  </action>
+  <action name="actionConnect">
+   <property name="icon">
+    <iconset resource="iconsToProject.qrc">
+     <normaloff>:/connect.png</normaloff>:/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Прийняти дані</string>
+   </property>
+  </action>
+  <action name="actionConfigure">
+   <property name="icon">
+    <iconset resource="iconsToProject.qrc">
+     <normaloff>:/settings.png</normaloff>:/settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Конфігурація</string>
+   </property>
+  </action>
+  <action name="actionClear">
+   <property name="icon">
+    <iconset resource="iconsToProject.qrc">
+     <normaloff>:/clear.png</normaloff>:/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Очистити</string>
+   </property>
+  </action>
+  <action name="actionDisconnect">
+   <property name="icon">
+    <iconset resource="iconsToProject.qrc">
+     <normaloff>:/disconnect.png</normaloff>:/disconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Відєднати пристрій</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="iconsToProject.qrc">
+     <normaloff>:/application-exit.png</normaloff>:/application-exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Вихід</string>
+   </property>
+  </action>
+  <action name="forTest">
+   <property name="text">
+    <string>Для тесту</string>
+   </property>
+  </action>
+  <action name="graphikaction">
+   <property name="icon">
+    <iconset resource="iconsToProject.qrc">
+     <normaloff>:/iconPotential.png</normaloff>:/iconPotential.png</iconset>
+   </property>
+   <property name="text">
+    <string>Графік глубини</string>
+   </property>
+  </action>
+  <action name="potentialGrphikAction">
+   <property name="icon">
+    <iconset resource="iconsToProject.qrc">
+     <normaloff>:/iconDepth.png</normaloff>:/iconDepth.png</iconset>
+   </property>
+   <property name="text">
+    <string>Графік потенціалу</string>
+   </property>
+  </action>
+  <action name="help_action">
+   <property name="text">
+    <string>Підказка користування приладом</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="iconsToProject.qrc"/>
+ </resources>
+ <connections/>
+</ui>
