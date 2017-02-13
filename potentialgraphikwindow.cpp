@@ -4,7 +4,7 @@
 PotentialGraphikWindow::PotentialGraphikWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::PotentialGraphikWindow)
-{
+{//off
     ui->setupUi(this);
     this->setWindowTitle("Графік  потенціалу");
     connect(this, SIGNAL(showPotential()),this, SLOT(show()));
@@ -16,7 +16,7 @@ PotentialGraphikWindow::PotentialGraphikWindow(QWidget *parent) :
 void PotentialGraphikWindow::setPotentialPoints(QVector<double> points)
 {
     potentialPoints = points;
-}
+}//fggh
 
 void PotentialGraphikWindow::showGraphik(int zoom)
 {

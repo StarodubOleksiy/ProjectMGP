@@ -4,7 +4,7 @@
 #include <QFileDialog>
 using namespace std;//цукенг
 FinalData::FinalData(QObject *parent) :
-    QAbstractTableModel(parent)
+    QAbstractTableModel(parent)//dfdfdf
 {
     header_data << QString::fromUtf8("Напруга, В.") << QString::fromUtf8("Глубина, м.")
     << QString::fromUtf8("Частота, Гц")<< QString::fromUtf8("Широта, град.")
