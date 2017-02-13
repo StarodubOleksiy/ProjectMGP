@@ -2,7 +2,7 @@
 //#define _USE_MATH_DEFINES
 #include <cmath>
 #include <QFileDialog>
-using namespace std;
+using namespace std;//цукенг
 FinalData::FinalData(QObject *parent) :
     QAbstractTableModel(parent)
 {
